@@ -101,15 +101,10 @@ Kemudian jalankan seluruh cell untuk melihat proses dan hasil panorama.
 Hasil panorama akan tersimpan pada folder:
 
 ```
-result/
+result/panorama.jpg
 ```
 
-Output berupa gambar panorama yang dihasilkan dari penggabungan beberapa gambar input pada folder:
+Output berupa gambar panorama yang dihasilkan dari penggabungan beberapa gambar input pada folder images
 
-```
-images/
-```
-
-Pastikan gambar input memiliki area tumpang tindih (overlap) agar proses stitching dapat berjalan dengan baik.
 
 
