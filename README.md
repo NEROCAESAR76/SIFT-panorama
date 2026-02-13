@@ -41,14 +41,24 @@ Menampilkan hasil akhir panorama.
 
 ## 📂 Struktur Repository
 
+## 📂 Struktur Repository
+
+```text
 SIFT-panorama/
 │
-├── sift-panorama.ipynb # Notebook utama berisi implementasi
-├── images/ # Folder gambar input
-├── result/ # Folder hasil panorama
-└── README.md # Dokumentasi proyek
-
-
+├── sift-panorama.ipynb      # Notebook utama berisi seluruh implementasi
+│
+├── images/                  # Folder berisi gambar input
+│   ├── img1.jpg
+│   ├── img2.jpg
+│   └── ...
+│
+├── result/                  # Folder berisi hasil panorama
+│   ├── panorama.jpg
+│   └── ...
+│
+└── README.md                # Dokumentasi proyek
+```
 ---
 
 ## ▶️ Cara Menjalankan
@@ -56,3 +66,5 @@ SIFT-panorama/
 ### 1. Clone repository
 ```bash
 git clone https://github.com/NEROCAESAR76/SIFT-panorama.git
+
+
