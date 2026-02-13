@@ -41,8 +41,6 @@ Menampilkan hasil akhir panorama.
 
 ## 📂 Struktur Repository
 
-## 📂 Struktur Repository
-
 ```text
 SIFT-panorama/
 │
@@ -67,4 +65,5 @@ SIFT-panorama/
 ```bash
 git clone https://github.com/NEROCAESAR76/SIFT-panorama.git
 
+### 1. Clone repository
 
