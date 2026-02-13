@@ -64,6 +64,52 @@ SIFT-panorama/
 ### 1. Clone repository
 ```bash
 git clone https://github.com/NEROCAESAR76/SIFT-panorama.git
+```
 
-### 1. Clone repository
+### 2. Masuk ke folder project
+
+```bash
+cd SIFT-panorama
+```
+
+### 3. Install dependency
+
+Pastikan Python sudah terinstall, lalu jalankan:
+
+```bash
+pip install opencv-python numpy matplotlib
+```
+
+### 4. Jalankan Jupyter Notebook
+
+```bash
+jupyter notebook
+```
+
+Setelah itu buka file berikut di browser:
+
+```
+sift-panorama.ipynb
+```
+
+Kemudian jalankan seluruh cell untuk melihat proses dan hasil panorama.
+
+---
+
+## 📸 Output (Result)
+
+Hasil panorama akan tersimpan pada folder:
+
+```
+result/
+```
+
+Output berupa gambar panorama yang dihasilkan dari penggabungan beberapa gambar input pada folder:
+
+```
+images/
+```
+
+Pastikan gambar input memiliki area tumpang tindih (overlap) agar proses stitching dapat berjalan dengan baik.
+
 
