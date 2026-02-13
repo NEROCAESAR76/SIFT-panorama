@@ -1,29 +1,58 @@
-# SIFT-panorama
+# 🖼️ SIFT Panorama Stitching
 
-# 🖼️ SIFT Panorama Stitcher
+Proyek ini merupakan implementasi **Image Stitching (Panorama Generation)** menggunakan algoritma **Scale-Invariant Feature Transform (SIFT)** untuk mendeteksi serta mencocokkan fitur antar gambar, kemudian menggabungkannya menjadi satu gambar panorama utuh.
 
-[![Python Version](https://img.shields.io/badge/Python-3.x-blue.svg)](https://www.python.org/)
-[![OpenCV](https://img.shields.io/badge/OpenCV-SIFT-green.svg)](https://opencv.org/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-
-Repositori ini mengimplementasikan algoritma **Scale-Invariant Feature Transform (SIFT)** untuk menggabungkan dua gambar atau lebih menjadi satu gambar panorama yang mulus (*image stitching*). 
-
-Proses ini menggunakan deteksi *keypoint*, pencocokan fitur, dan perhitungan matriks homografi untuk menyelaraskan gambar secara presisi.
+Proyek dikembangkan menggunakan **Python** dalam bentuk **Jupyter Notebook** sebagai bagian dari pembelajaran Computer Vision dan pengolahan citra digital.
 
 ---
 
-## 🚀 Fitur Utama
+## 📌 Deskripsi Singkat
 
-* **Deteksi Keypoint Tahan Skala:** Menggunakan SIFT untuk menemukan titik-titik fitur yang konsisten meskipun gambar mengalami perubahan skala atau rotasi.
-* **Pencocokan Fitur (Feature Matching):** Menggunakan algoritma pencocokan (*matcher*) untuk mencari pasangan *keypoint* terbaik antar gambar.
-* **RANSAC Homography:** Mengeliminasi kecocokan yang salah (*outliers*) dan menghitung matriks transformasi perspektif dengan akurasi tinggi.
-* **Image Blending:** Menggabungkan gambar yang sudah diselaraskan menjadi satu kesatuan panorama.
+Image stitching adalah teknik dalam Computer Vision yang digunakan untuk menggabungkan beberapa gambar yang memiliki area overlap menjadi satu gambar panorama.
+
+Pada proyek ini, proses stitching dilakukan melalui tahapan berikut:
+
+### 1️⃣ Deteksi Keypoints dan Deskriptor
+Menggunakan algoritma SIFT untuk mendeteksi fitur unik yang tahan terhadap perubahan skala dan rotasi.
+
+### 2️⃣ Feature Matching
+Mencocokkan fitur antar gambar menggunakan metode pencocokan seperti Brute Force Matcher atau FLANN.
+
+### 3️⃣ Homography Estimation (RANSAC)
+Menghitung matriks homografi untuk transformasi perspektif sekaligus menghilangkan outlier menggunakan algoritma RANSAC.
+
+### 4️⃣ Warping dan Stitching
+Melakukan transformasi perspektif dan menggabungkan gambar menjadi panorama.
+
+### 5️⃣ Visualisasi Hasil
+Menampilkan hasil akhir panorama.
 
 ---
 
-## 🛠️ Prasyarat (Requirements)
+## 🛠️ Teknologi yang Digunakan
 
-Pastikan Anda telah menginstal pustaka berikut sebelum menjalankan kode:
+- Python 3.x  
+- OpenCV  
+- NumPy  
+- Matplotlib  
+- Jupyter Notebook  
 
+---
+
+## 📂 Struktur Repository
+
+SIFT-panorama/
+│
+├── sift-panorama.ipynb # Notebook utama berisi implementasi
+├── images/ # Folder gambar input
+├── result/ # Folder hasil panorama
+└── README.md # Dokumentasi proyek
+
+
+---
+
+## ▶️ Cara Menjalankan
+
+### 1. Clone repository
 ```bash
-pip install opencv-contrib-python numpy matplotlib
+git clone https://github.com/NEROCAESAR76/SIFT-panorama.git
