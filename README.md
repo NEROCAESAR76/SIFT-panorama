@@ -96,13 +96,12 @@ Kemudian jalankan seluruh cell untuk melihat proses dan hasil panorama.
 
 ---
 
-## 📸 Output (Result)
+## 📸 Hasil Panorama
 
-Hasil panorama akan tersimpan pada folder:
+Berikut adalah hasil akhir proses image stitching:
 
-```
-result/panorama.jpg
-```
+![Panorama Result](result/panorama.jpg)
+
 
 Output berupa gambar panorama yang dihasilkan dari penggabungan beberapa gambar input pada folder images
 
